@@ -9,7 +9,7 @@ public class TestRandom {
 	  
 	  Random random1 = new Random(5);
 	  
-	  System.out.println("Radom1生成器：");
+	  System.out.println("Radom1鐢熸垚鍣細");
 	  for (int i = 0; i < 100; i++){
 		  System.out.printf("%5d", random1.nextInt(1000));
 	  }
@@ -18,7 +18,7 @@ public class TestRandom {
 	  
 	  Random random2 = new Random(5);
 	  
-	  System.out.println("Random2生成器：");
+	  System.out.println("Random2鐢熸垚鍣細");
 	  for (int i = 0; i < 100; i++){
 		  System.out.printf("%5d", random2.nextInt(1000));
 	  }

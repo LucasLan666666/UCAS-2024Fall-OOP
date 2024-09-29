@@ -7,23 +7,23 @@ public class Reconciliation2 {
 	public static void main(String[] args) {
 
 		BigDecimal totalTransFromShanghai = new BigDecimal("100.2");
-		System.out.println("½»Ò×Ëù·¢»ØµÄ½»Ò××Ü¶îÎª£¨µ¥Î»£ºÔª£©: " + totalTransFromShanghai);
+		System.out.println("äº¤æ˜“æ‰€å‘å›çš„äº¤æ˜“æ€»é¢ä¸ºï¼ˆå•ä½ï¼šå…ƒï¼‰: " + totalTransFromShanghai);
 
 		// Create a Scanner
 		Scanner input = new Scanner(System.in);
 
-		System.out.print("µÚÒ»±Ê½»Ò×¶îÎª£¨µ¥Î»£ºÔª£©: ");
+		System.out.print("ç¬¬ä¸€ç¬”äº¤æ˜“é¢ä¸ºï¼ˆå•ä½ï¼šå…ƒï¼‰: ");
 		BigDecimal trans1 = input.nextBigDecimal();
 
-		System.out.print("µÚ¶ş±Ê½»Ò×¶îÎª£¨µ¥Î»£ºÔª£©: ");
+		System.out.print("ç¬¬äºŒç¬”äº¤æ˜“é¢ä¸ºï¼ˆå•ä½ï¼šå…ƒï¼‰: ");
 		BigDecimal trans2 = input.nextBigDecimal();
 
 		BigDecimal totalTrans = trans1.add(trans2);
 
 		if (totalTransFromShanghai.compareTo(totalTrans) == 0) {
-			System.out.println("¶ÔÕËÕıÈ·£¬¿ÉÒÔ°´Ê±ÏÂ°àÁË£¡");
+			System.out.println("å¯¹è´¦æ­£ç¡®ï¼Œå¯ä»¥æŒ‰æ—¶ä¸‹ç­äº†ï¼");
 		} else {
-			System.out.println("Duang£¡");
+			System.out.println("Duangï¼");
 			// System.out.println("totalTrans = " + totalTrans);
 		}
 

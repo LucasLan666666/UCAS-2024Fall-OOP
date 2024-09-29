@@ -7,14 +7,14 @@ public class CelsiusToFahrenheit {
 	  
     Scanner input = new Scanner(System.in);
 
-    System.out.print("ÊäÈëÉãÊÏÎÂ¶È: ");
+    System.out.print("è¾“å…¥æ‘„æ°æ¸©åº¦: ");
     double celsius = input.nextDouble(); 
 
     // Convert Celsius to Fahrenheit
     double fahrenheit = (9.0 / 5.0) * celsius + 32;
     
-    System.out.println("ÉãÊÏ " + celsius + " ¶ÈµÈÓÚ»ªÊÏ " + 
-    		fahrenheit + " ¶È");  
+    System.out.println("æ‘„æ° " + celsius + " åº¦ç­‰äºåæ° " + 
+    		fahrenheit + " åº¦");  
     
     input.close();
   }

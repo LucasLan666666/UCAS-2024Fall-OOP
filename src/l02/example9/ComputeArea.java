@@ -15,14 +15,14 @@ public class ComputeArea {
 		while (nextRound) {
 			
 			// Prompt the user to enter a radius
-			System.out.print("ÊäÈë°ë¾¶Öµ: ");
+			System.out.print("è¾“å…¥åŠå¾„å€¼: ");
 			
 			double radius = 0;
 
 			try {
 				radius = Double.parseDouble(input.nextLine());
 			} catch (Exception e) {
-				System.out.println("ÊäÈëÖµ´íÎó£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 			
@@ -31,16 +31,16 @@ public class ComputeArea {
 				double area = radius * radius * PI;
 
 				// Display result
-				System.out.println("°ë¾¶Îª " + radius + " µÄÔ²Ãæ»ıÊÇ " + area);
+				System.out.println("åŠå¾„ä¸º " + radius + " çš„åœ†é¢ç§¯æ˜¯ " + area);
 			} else {
 				// Input error
-				System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜÎª¸ºÖµ£©£¬ÇëÖØĞÂÊäÈë¡£");
+				System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä¸ºè´Ÿå€¼ï¼‰ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 				continue;
 			}
 			
 			boolean retype = true;
 			while (retype) {
-				System.out.print("ÊÇ·ñ¼ÌĞø£¿ÇëÊäÈëY»òN£º");
+				System.out.print("æ˜¯å¦ç»§ç»­ï¼Ÿè¯·è¾“å…¥Yæˆ–Nï¼š");
 				try {
 					String answer = input.nextLine();
 					if (answer.toLowerCase().equals("y")){
@@ -50,13 +50,13 @@ public class ComputeArea {
 						break;
 					}
 				} catch (InputMismatchException e) {
-					System.out.println("ÊäÈëÖµ´íÎó£¬ÇëÖØĞÂÊäÈë¡£");
+					System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥ã€‚");
 					continue;
 				}
 			}
 		}
 		
-		System.out.println("Ğ»Ğ»Ê¹ÓÃ£¡");
+		System.out.println("è°¢è°¢ä½¿ç”¨ï¼");
 
 	}
 }

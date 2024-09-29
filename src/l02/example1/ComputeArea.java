@@ -14,7 +14,7 @@ public class ComputeArea {
     area = radius * radius * PI;
 
     // Display results
-    System.out.println("°ë¾¶Îª " +
-      radius + " µÄÔ²Ãæ»ıÊÇ " + area);
+    System.out.println("åŠå¾„ä¸º " +
+      radius + " çš„åœ†é¢ç§¯æ˜¯ " + area);
     }
 }

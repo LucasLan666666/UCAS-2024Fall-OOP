@@ -11,7 +11,7 @@ public class ComputeArea {
 		Scanner input = new Scanner(System.in);
 
 		// Prompt the user to enter a radius
-		System.out.print("ÊäÈë°ë¾¶Öµ: ");
+		System.out.print("è¾“å…¥åŠå¾„å€¼: ");
 		double radius = input.nextDouble();
 
 		if (radius >= 0){
@@ -19,11 +19,11 @@ public class ComputeArea {
 			double area = radius * radius * PI;
 
 			// Display result
-			System.out.println("°ë¾¶Îª " +
-				      radius + " µÄÔ²Ãæ»ıÊÇ " + area);
+			System.out.println("åŠå¾„ä¸º " +
+				      radius + " çš„åœ†é¢ç§¯æ˜¯ " + area);
 		} else {
 			// Input error
-			System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜÎª¸ºÖµ£©£¬³ÌĞòÒÑÍË³ö");
+			System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä¸ºè´Ÿå€¼ï¼‰ï¼Œç¨‹åºå·²é€€å‡º");
 	    	//System.exit(1);
 		}
 		
