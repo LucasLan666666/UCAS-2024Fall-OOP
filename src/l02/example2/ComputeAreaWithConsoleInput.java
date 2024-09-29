@@ -11,15 +11,15 @@ public class ComputeAreaWithConsoleInput {
 		Scanner input = new Scanner(System.in);
 
 		// Prompt the user to enter a radius
-		System.out.print("ÊäÈë°ë¾¶Öµ: ");
+		System.out.print("è¾“å…¥åŠå¾„å€¼: ");
 		double radius = input.nextDouble();
 
 		// Compute area
 		double area = radius * radius * PI;
 
 		// Display result
-		System.out.println("°ë¾¶Îª " +
-			      radius + " µÄÔ²Ãæ»ıÊÇ " + area);
+		System.out.println("åŠå¾„ä¸º " +
+			      radius + " çš„åœ†é¢ç§¯æ˜¯ " + area);
 		
 		input.close();
 	}

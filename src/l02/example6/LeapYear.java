@@ -7,13 +7,13 @@ public class LeapYear {
   public static void main(String args[]) {
     // Create a Scanner
     Scanner input = new Scanner(System.in);
-    System.out.print("ÇëÊäÈëÄê·İ: ");
+    System.out.print("è¯·è¾“å…¥å¹´ä»½: ");
     
     try{
     	int year = input.nextInt();
     	
     	if (year < 0) {
-        	System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜÎª¸ºÖµ£©£¬³ÌĞòÒÑÍË³ö");
+        	System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä¸ºè´Ÿå€¼ï¼‰ï¼Œç¨‹åºå·²é€€å‡º");
         	System.exit(1);
         }
 
@@ -22,10 +22,10 @@ public class LeapYear {
           (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 
         // Display the result in a message dialog box
-        System.out.println(year + "ÄêÊÇ·ñÎªÈòÄê? " + isLeapYear);   
+        System.out.println(year + "å¹´æ˜¯å¦ä¸ºé—°å¹´? " + isLeapYear);   
         
     } catch (InputMismatchException e){
-    	System.out.println("ÊäÈëÖµ´íÎó £¨·ÇÕûÊı£©£¬³ÌĞòÒÑÍË³ö");
+    	System.out.println("è¾“å…¥å€¼é”™è¯¯ ï¼ˆéæ•´æ•°ï¼‰ï¼Œç¨‹åºå·²é€€å‡º");
     	System.exit(1);
     }
   } 

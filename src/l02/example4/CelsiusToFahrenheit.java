@@ -6,22 +6,22 @@ public class CelsiusToFahrenheit {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
-    System.out.print("ÊäÈëÉãÊÏÎÂ¶È: ");
+    System.out.print("è¾“å…¥æ‘„æ°æ¸©åº¦: ");
     double celsius = input.nextDouble(); 
 
     if (celsius < -273.15){
     	// Input error
-		System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜµÍÓÚ¾ø¶ÔÁã¶È-237.15£©£¬³ÌĞòÒÑÍË³ö");
+		System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½ä½äºç»å¯¹é›¶åº¦-237.15ï¼‰ï¼Œç¨‹åºå·²é€€å‡º");
     	System.exit(1);
 	} else if (celsius > 1.416833e32) {
 		// Input error
-		System.out.println("ÊäÈëÖµ´íÎó£¨²»ÄÜ¸ßÓÚÆÕÀÊ¿ËÎÂ¶È1.416833(85)x10^32K£©£¬³ÌĞòÒÑÍË³ö");
+		System.out.println("è¾“å…¥å€¼é”™è¯¯ï¼ˆä¸èƒ½é«˜äºæ™®æœ—å…‹æ¸©åº¦1.416833(85)x10^32Kï¼‰ï¼Œç¨‹åºå·²é€€å‡º");
     	System.exit(1);
 	} else {
 		// Convert Celsius to Fahrenheit
 	    double fahrenheit = (9.0 / 5) * celsius + 32;
-	    System.out.println("ÉãÊÏ " + celsius + " ¶ÈµÈÓÚ»ªÊÏ " + 
-	    		fahrenheit + " ¶È"); 
+	    System.out.println("æ‘„æ° " + celsius + " åº¦ç­‰äºåæ° " + 
+	    		fahrenheit + " åº¦"); 
 	}   
     
     input.close();
