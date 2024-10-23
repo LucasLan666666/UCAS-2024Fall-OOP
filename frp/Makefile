@@ -1,6 +1,6 @@
-export PATH := $(PATH):`go env GOPATH`/bin
-export GO111MODULE=on
-LDFLAGS := -s -w
+export PATH := $(PATH):`go env GOPATH`/bin # 将GOPATH/bin目录加入到PATH中
+export GO111MODULE=on # 开启go mod支持
+LDFLAGS := -s -w # 减少二进制文件大小
 
 all: env fmt build
 
@@ -10,6 +10,7 @@ env:
 	@go version
 
 # compile assets into binary file
+# 用于将web资源编译到二进制文件中
 file:
 	rm -rf ./assets/frps/static/*
 	rm -rf ./assets/frpc/static/*
@@ -37,11 +38,11 @@ frpc:
 test: gotest
 
 gotest:
-	go test -v --cover ./assets/...
-	go test -v --cover ./cmd/...
-	go test -v --cover ./client/...
-	go test -v --cover ./server/...
-	go test -v --cover ./pkg/...
+	GO111MODULE=on go test -v --cover ./assets/...
+	GO111MODULE=on go test -v --cover ./cmd/...
+	GO111MODULE=on go test -v --cover ./client/...
+	GO111MODULE=on go test -v --cover ./server/...
+	GO111MODULE=on go test -v --cover ./pkg/...
 
 e2e:
 	./hack/run-e2e.sh
